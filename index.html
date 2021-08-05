@@ -15,7 +15,58 @@
   </head>
   <body>
     <main class="layout">
-      <aside class="aside"></aside>
+      <aside class="aside">
+        <p class="aside__speed">63</p>
+        <div class="aside__info-bar">
+          <div class="aside__info-bar__drive">
+            <span>P</span>
+            <span>R</span>
+            <span>N</span>
+            <span class="active">D</span>
+          </div>
+          <span class="aside__info-bar__velocity-unit">km/h</span>
+          <div class="aside__info-bar__info">
+            <p>362 km</p>
+            <img src="./assets/icons/battery.svg" alt="Batery" />
+          </div>
+        </div>
+
+        <div class="aside__image">
+          <img src="/assets/icons/steering-wheel.svg" alt="steering wheel" />
+          <span class="aside__image__velocity">60</span>
+        </div>
+
+        <div class="aside__card">
+          <div class="aside__card__header">
+            <p class="aside__card__header__title">Since 1:34 PM</p>
+            <img src="/assets/icons/dots.svg" alt="Dots" />
+          </div>
+
+          <div class="aside__card__body">
+            <div class="aside__card__body__info">
+              <div class="aside__card__body__info__item">
+                <p class="aside__card__body__info__item__number">11.9</p>
+                <p class="aside__card__body__info__item__unit">km</p>
+              </div>
+              <div class="aside__card__body__info__item">
+                <p class="aside__card__body__info__item__number">16</p>
+                <p class="aside__card__body__info__item__unit">min</p>
+              </div>
+              <div class="aside__card__body__info__item">
+                <p class="aside__card__body__info__item__number">11</p>
+                <p class="aside__card__body__info__item__unit">Wh/km</p>
+              </div>
+            </div>
+            <span class="divider"></span>
+            <p class="aside__card__body__last-charge">Since last charrge</p>
+          </div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot active"></div>
+          <div class="dot"></div>
+        </div>
+      </aside>
 
       <div class="map"></div>
 

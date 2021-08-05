@@ -6,4 +6,89 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 1fr 80px;
+  grid-template-areas: "aside map" "footer footer";
+}
+
+.aside {
+  grid-area: aside;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+}
+
+.map {
+  grid-area: map;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: footer;
+  background: black;
+}
+.footer__temperature {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: white;
+}
+.footer__temperature__unit {
+  color: rgba(255, 255, 255, 0.4);
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.car {
+  background: url("/assets/icons/model3-icon.svg");
+}
+.defrost {
+  background: url("/assets/icons/defrost.svg");
+}
+.heater {
+  background: url("/assets/icons/heater.svg");
+}
+.seat {
+  background: url("/assets/icons/seat.svg");
+}
+.fan {
+  background: url("/assets/icons/fan.svg");
+}
+.seat-1 {
+  background: url("/assets/icons/seat-1.svg");
+}
+.music {
+  background: url("/assets/icons/music.svg");
+}
+.phone {
+  background: url("/assets/icons/phone.svg");
+}
+.volume {
+  background: url("/assets/icons/volume.svg");
+}
+.arrow-left {
+  background: url("/assets/icons/arrow-left.svg");
+}
+.arrow-right {
+  background: url("/assets/icons/arrow-right.svg");
 }

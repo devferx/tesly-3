@@ -156,13 +156,96 @@
           </button>
         </div>
 
-        <button class="settings-button">
+        <div id="map-config" class="map__config active">
+          <div class="map__config__container">
+            <div class="map__config__menu">
+              <ul class="map__config__menu__list">
+                <li>
+                  <i class="icon quick-controls"></i>
+                  <span>Quick Controls</span>
+                </li>
+                <li>
+                  <i class="icon lights"></i>
+                  <span>Lights</span>
+                </li>
+                <li class="active">
+                  <i class="icon lock"></i>
+                  <span>Locks</span>
+                </li>
+                <li>
+                  <i class="icon display"></i>
+                  <span>Display</span>
+                </li>
+                <li>
+                  <i class="icon car-black"></i>
+                  <span>Driving</span>
+                </li>
+                <li>
+                  <i class="icon steering-wheel-small"></i>
+                  <span>Autopilot</span>
+                </li>
+                <li>
+                  <i class="icon safety-and-security"></i>
+                  <span>Safety & Security</span>
+                </li>
+                <li>
+                  <i class="icon service"></i>
+                  <span>Service</span>
+                </li>
+              </ul>
+
+              <button class="map__config__menu__glovebox-buton">
+                <img src="/assets/icons/glovebox.svg" alt="Glove box button" />
+                <span>Glovebox</span>
+              </button>
+            </div>
+
+            <div class="map__config__content">
+              <button class="exit-button">
+                <img src="./assets/icons/exit.svg" alt="Exit Icon" />
+              </button>
+
+              <div class="map__config__content__opts-container">
+                <div class="map__config__content__opt-container">
+                  <div class="switch active" id="walkup">
+                    <div class="switch-ball active"></div>
+                  </div>
+
+                  <p>Walk Up Unlock</p>
+                </div>
+                <div class="map__config__content__opt-container">
+                  <div class="switch" id="walk-away">
+                    <div class="switch-ball active"></div>
+                  </div>
+
+                  <p>Walk away Unlock</p>
+                </div>
+                <div class="map__config__content__opt-container">
+                  <div class="switch" id="child-protection">
+                    <div class="switch-ball active"></div>
+                  </div>
+
+                  <p>Child Protection Lock</p>
+                </div>
+                <div class="map__config__content__opt-container">
+                  <div class="switch" id="park">
+                    <div class="switch-ball active"></div>
+                  </div>
+
+                  <p>Unlock on Park</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="config-button" class="settings-button">
           <img src="/assets/icons/gear.svg" alt="Gear icon" />
         </button>
       </div>
 
       <footer class="footer">
-        <i class="icon car"></i>
+        <i id="car-button" class="icon car"></i>
         <i class="icon defrost"></i>
         <i class="icon heater"></i>
         <i class="icon seat"></i>

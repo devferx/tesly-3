@@ -303,6 +303,132 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
+
+.map__config {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  display: none;
+  width: 100%;
+  height: calc(100% - 64px);
+  padding: 12px;
+  padding-top: 0;
+  z-index: 99999;
+}
+.map__config.active {
+  display: block;
+}
+.map__config__container {
+  display: grid;
+  grid-template-columns: 242px 1fr;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.map__config__menu {
+  height: 100%;
+  padding: 24px;
+  background-color: #fff;
+}
+.map__config__menu__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.map__config__menu__list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  opacity: 0.6;
+}
+
+.map__config__menu__list .active {
+  opacity: 1;
+}
+
+.map__config__menu__list span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.map__config__menu__glovebox-buton {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  margin-top: 12px;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+}
+.map__config__menu__glovebox-buton span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.map__config__content {
+  padding: 24px;
+}
+.map__config__content__opts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 16px;
+}
+.map__config__content__opt-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.map__config__content__opt-container {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+  padding: 4px;
+  border-radius: 999px;
+  background: #dbdbdb;
+  user-select: none;
+  transition: 450ms background;
+}
+
+.switch-ball {
+  display: block;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 450ms transform;
+}
+
+.switch.active {
+  background: #007be4;
+}
+
+.switch.active .switch-ball {
+  transform: translateX(60px);
+}
+
+.exit-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 .settings-button {
   position: absolute;
   bottom: 45px;
@@ -314,6 +440,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   user-select: none;
   cursor: pointer;
+  z-index: 9;
 }
 
 .footer {
@@ -389,4 +516,25 @@ body {
 }
 .navigate {
   background: url("/assets/icons/navigate-icon.svg");
+}
+.quick-controls {
+  background: url("/assets/icons/quick-controls.svg");
+}
+.lights {
+  background: url("/assets/icons/lights.svg");
+}
+.display {
+  background: url("/assets/icons/display.svg");
+}
+.car-black {
+  background: url("/assets/icons/model3-icon-black.svg");
+}
+.steering-wheel-small {
+  background: url("/assets/icons/steering-wheel-small.svg");
+}
+.safety-and-security {
+  background: url("/assets/icons/safety-and-security.svg");
+}
+.service {
+  background: url("/assets/icons/service.svg");
 }
